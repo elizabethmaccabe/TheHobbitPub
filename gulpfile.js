@@ -4,6 +4,7 @@ var browserSync = require('browser-sync').create();
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
+var imagemin = require('gulp-imagemin');
 
 //Task to compile SCSS to CSS
 gulp.task('sass', function()
@@ -34,6 +35,17 @@ gulp.task('useref', function()
     //Minifies only if it's a JS file
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulp.dest('dist'));
+});
+
+//Task to minify images
+gulp.task('images', function()
+{
+    return gulp.src('site/**/*.+(png|jpg|gif|svg)')
+    .pipe(imagemin(
+    {
+        interlace: true
+    }))
+    .pipe(gulp.dest('dist/images'))
 });
 
 //Watch task
