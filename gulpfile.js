@@ -1,3 +1,4 @@
+//Require Plugins
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
@@ -28,7 +29,7 @@ gulp.task('browserSync', function()
     })
 });
 
-//Task to concatenate all js files into main.min.js
+//Task to concatenate all js files into 'main.min.js'
 gulp.task('useref', function()
 {
     return gulp.src('site/*.html')
@@ -49,6 +50,13 @@ gulp.task('images', function()
     })))
     .pipe(gulp.dest('dist/images'))
 });
+
+//Task to copy images to 'dist' folder
+gulp.task('fonts', function()
+{
+    return gulp.src('site/fonts/**/*')
+    .pipe(gulp.dest('dist/fonts'))
+})
 
 //Task to watch scss, html and js files
 gulp.task('watch', ['browserSync', 'sass'], function()
