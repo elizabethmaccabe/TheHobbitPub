@@ -8,6 +8,9 @@ gulp.task('sass', function()
     return gulp.src('site/scss/**/*.scss')
     .pipe(sass())
     .pipe(gulp.dest('site/css'))
+    .pipe(browserSync.reload({
+        stream: true
+    }))
 });
 
 //Task to run a server with Browser Sync
