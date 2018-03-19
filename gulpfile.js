@@ -7,7 +7,9 @@ var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
+var del = require('del');
 
+// === DEVELOPMENT TASKS === //
 //Task to compile SCSS to CSS
 gulp.task('sass', function()
 {
@@ -29,6 +31,15 @@ gulp.task('browserSync', function()
     })
 });
 
+//Task to watch scss, html and js files
+gulp.task('watch', ['browserSync', 'sass'], function()
+{
+    gulp.watch('site/scss/**/*.scss', ['sass']);
+    gulp.watch('site/*.html', browserSync.reload);
+    gulp.watch('site/**/*.js', browserSync.reload);
+});
+
+// === OPTIMISATION TASKS === //
 //Task to concatenate all js files into 'main.min.js'
 gulp.task('useref', function()
 {
@@ -51,6 +62,12 @@ gulp.task('images', function()
     .pipe(gulp.dest('dist/images'))
 });
 
+//Task to clear cache
+gulp.task('cache:clear', function(callback)
+{
+    return cache.clearAll(callback)
+});
+
 //Task to copy fonts to 'dist' folder
 gulp.task('fonts', function()
 {
@@ -58,10 +75,8 @@ gulp.task('fonts', function()
     .pipe(gulp.dest('dist/fonts'))
 })
 
-//Task to watch scss, html and js files
-gulp.task('watch', ['browserSync', 'sass'], function()
+//Task to clean up files no longer in use
+gulp.task('clean:dist', function()
 {
-    gulp.watch('site/scss/**/*.scss', ['sass']);
-    gulp.watch('site/*.html', browserSync.reload);
-    gulp.watch('site/**/*.js', browserSync.reload);
+    return del.sync('dist');
 });
