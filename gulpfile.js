@@ -48,7 +48,7 @@ gulp.task('images', function()
     .pipe(gulp.dest('dist/images'))
 });
 
-//Watch task
+//Task to watch scss, html and js files
 gulp.task('watch', ['browserSync', 'sass'], function()
 {
     gulp.watch('site/scss/**/*.scss', ['sass']);
