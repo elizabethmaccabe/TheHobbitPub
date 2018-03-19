@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var useref = require('gulp-useref');
 
 //Task to compile SCSS to CSS
 gulp.task('sass', function()
@@ -21,6 +22,14 @@ gulp.task('browserSync', function()
             baseDir: 'site'
         },
     })
+});
+
+//Task to concatenate all js files into main.min.js
+gulp.task('useref', function()
+{
+    return gulp.src('site/*.html')
+    .pipe(useref())
+    .pipe(gulp.dest('dist'))
 });
 
 //Watch task
