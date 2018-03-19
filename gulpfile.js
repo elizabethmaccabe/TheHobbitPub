@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var useref = require('gulp-useref');
+var uglify = require('gulp-uglify');
+var gulpIf = require('gulp-if');
 
 //Task to compile SCSS to CSS
 gulp.task('sass', function()
@@ -29,7 +31,9 @@ gulp.task('useref', function()
 {
     return gulp.src('site/*.html')
     .pipe(useref())
-    .pipe(gulp.dest('dist'))
+    //Minifies only if it's a JS file
+    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulp.dest('dist'));
 });
 
 //Watch task
