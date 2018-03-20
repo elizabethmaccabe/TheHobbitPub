@@ -8,6 +8,7 @@ var gulpIf = require('gulp-if');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
+var runSequence = require('run-sequence');
 
 // === DEVELOPMENT TASKS === //
 //Task to compile SCSS to CSS
@@ -37,6 +38,13 @@ gulp.task('watch', ['browserSync', 'sass'], function()
     gulp.watch('site/scss/**/*.scss', ['sass']);
     gulp.watch('site/*.html', browserSync.reload);
     gulp.watch('site/**/*.js', browserSync.reload);
+});
+
+gulp.task('default', function(callback)
+{
+    runSequence(['sass', 'browserSync', 'watch'],
+        callback
+    )
 });
 
 // === OPTIMISATION TASKS === //
@@ -79,4 +87,11 @@ gulp.task('fonts', function()
 gulp.task('clean:dist', function()
 {
     return del.sync('dist');
+});
+
+gulp.task('build', function(callback)
+{
+    runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts'],
+        callback
+    )
 });
