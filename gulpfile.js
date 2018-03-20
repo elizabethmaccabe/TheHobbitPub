@@ -16,13 +16,18 @@ var runSequence = require('run-sequence');
 gulp.task('sass', function()
 {
     return gulp.src('site/scss/**/*.scss')
-    .pipe(sass())
-    .pipe(autoprefixer({
+    .pipe(sass(
+    {
+        includePaths: require('node-normalize-scss').includePaths
+    }))
+    .pipe(autoprefixer(
+    {
         browsers: ['last 2 versions'],
         cascade: false
     }))
     .pipe(gulp.dest('site/css'))
-    .pipe(browserSync.reload({
+    .pipe(browserSync.reload(
+    {
         stream: true
     }))
 });
