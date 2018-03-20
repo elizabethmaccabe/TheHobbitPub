@@ -1,6 +1,7 @@
 //Require Plugins
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
@@ -16,6 +17,10 @@ gulp.task('sass', function()
 {
     return gulp.src('site/scss/**/*.scss')
     .pipe(sass())
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
     .pipe(gulp.dest('site/css'))
     .pipe(browserSync.reload({
         stream: true
