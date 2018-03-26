@@ -24,7 +24,7 @@ nav
     
     .brand-logo
     {
-        @include fontSize(55px);
+        @include fontSize(60px);
         font-family: $font-logo;
         
         &:hover
