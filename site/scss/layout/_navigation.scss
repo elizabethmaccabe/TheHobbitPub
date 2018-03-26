@@ -3,22 +3,22 @@ nav
     height: 100px;
     line-height: 100px;
     margin-bottom: -20px;
-    font-family: $font-header;
+    font-family: $font-nav;
     color: $color-white;
     
     li
     {
+        a
+        {
+            @include fontSize(22px);
+        }
+        
         &:hover
         {
             a
             {
                 color: $color-black;
             }
-        }
-        
-        a
-        {
-            @include fontSize(22px);
         }
     }
     

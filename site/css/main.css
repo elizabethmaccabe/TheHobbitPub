@@ -7301,8 +7301,18 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   src: url(../fonts/Catamaran-Medium.ttf);
   font-weight: 300; }
 
+@font-face {
+  font-family: AveriaSerifLight;
+  src: url(../fonts/AveriaSerifLibre-Light.ttf);
+  font-weight: 300; }
+
+@font-face {
+  font-family: AveriaSerifRegular;
+  src: url(../fonts/AveriaSerifLibre-Regular.ttf);
+  font-weight: 300; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "FlareSerif", serif; }
+  font-family: "AveriaSerifRegular", serif; }
 
 h1 {
   font-size: 45px;
@@ -7316,13 +7326,13 @@ nav {
   height: 100px;
   line-height: 100px;
   margin-bottom: -20px;
-  font-family: "FlareSerif", serif;
+  font-family: "AveriaSerifLight", serif;
   color: #FFFFFF; }
-  nav li:hover a {
-    color: #000000; }
   nav li a {
     font-size: 22px;
     font-size: 1.375rem; }
+  nav li:hover a {
+    color: #000000; }
   nav .brand-logo {
     font-size: 60px;
     font-size: 3.75rem;
