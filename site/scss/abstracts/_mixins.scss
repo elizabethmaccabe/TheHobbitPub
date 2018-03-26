@@ -1,0 +1,6 @@
+//Mixin for PX to REM function
+@mixin fontSize($pxSize)
+{
+    font-size: $pxSize; //PX Fallback for IE
+    font-size: calculateRem($pxSize);
+}

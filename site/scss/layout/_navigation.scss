@@ -1,0 +1,41 @@
+nav
+{
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: -20px;
+    font-family: $font-header;
+    color: $color-white;
+    
+    li
+    {
+        &:hover
+        {
+            a
+            {
+                color: $color-black;
+            }
+        }
+        
+        a
+        {
+            @include fontSize(22px);
+        }
+    }
+    
+    .brand-logo
+    {
+        @include fontSize(55px);
+        font-family: $font-logo;
+        
+        &:hover
+        {
+            color: $color-black;
+        }
+        
+        img
+        {
+            width: 180px;
+            padding: 10px;
+        }
+    }
+}
