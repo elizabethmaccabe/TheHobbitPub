@@ -1,3 +1,4 @@
+//Logo Font
 @font-face
 {
     font-family: Ringbearer;
@@ -5,27 +6,7 @@
     font-weight: 400;
 }
 
-@font-face
-{
-    font-family: FlareSerif;
-    src: url(../fonts/FlareSerif.ttf);
-    font-weight: 400;
-}
-
-@font-face
-{
-    font-family: CatamaranLight;
-    src: url(../fonts/Catamaran-Light.ttf);
-    font-weight: 300;
-}
-
-@font-face
-{
-    font-family: CatamaranMedium;
-    src: url(../fonts/Catamaran-Medium.ttf);
-    font-weight: 300;
-}
-
+//Nav Font
 @font-face
 {
     font-family: AveriaSerifLight;
@@ -33,9 +14,26 @@
     font-weight: 300;
 }
 
+//Heading Font
 @font-face
 {
     font-family: AveriaSerifRegular;
     src: url(../fonts/AveriaSerifLibre-Regular.ttf);
+    font-weight: 300;
+}
+
+//Body Font
+@font-face
+{
+    font-family: CatamaranLight;
+    src: url(../fonts/Catamaran-Light.ttf);
+    font-weight: 300;
+}
+
+//Emphasis Body Font
+@font-face
+{
+    font-family: CatamaranMedium;
+    src: url(../fonts/Catamaran-Medium.ttf);
     font-weight: 300;
 }
