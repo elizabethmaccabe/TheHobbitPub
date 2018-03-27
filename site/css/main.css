@@ -7297,17 +7297,13 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   font-weight: 300; }
 
 @font-face {
-  font-family: CatamaranLight;
-  src: url(../fonts/Catamaran-Light.ttf);
-  font-weight: 300; }
-
-@font-face {
-  font-family: CatamaranMedium;
-  src: url(../fonts/Catamaran-Medium.ttf);
-  font-weight: 300; }
+  font-family: Quicksand;
+  src: url("../fonts.Quicksand-Regular.ttf");
+  font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "AveriaSerifRegular", serif; }
+  font-family: "AveriaSerifRegular", serif;
+  text-align: center; }
 
 h1 {
   font-size: 60px;
@@ -7318,7 +7314,7 @@ h2 {
   font-size: 3.125rem; }
 
 p {
-  font-family: "CatamaranLight", sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-align: justify; }
 
 nav {
