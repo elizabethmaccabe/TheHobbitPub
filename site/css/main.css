@@ -7310,6 +7310,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "AveriaSerifRegular", serif; }
 
 h1 {
+  font-size: 60px;
+  font-size: 3.75rem; }
+
+h2 {
   font-size: 50px;
   font-size: 3.125rem; }
 
@@ -7339,4 +7343,16 @@ nav {
       padding: 10px; }
 
 .hero-container {
-  margin-bottom: -10px; }
+  position: relative;
+  margin-bottom: -10px;
+  text-align: center; }
+  .hero-container .hero-img {
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%); }
+  .hero-container .hero-text {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    z-index: 1;
+    color: #FFFFFF;
+    font-size: 6vw; }

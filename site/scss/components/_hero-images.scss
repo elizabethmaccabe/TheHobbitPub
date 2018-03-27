@@ -1,4 +1,22 @@
 .hero-container
 {
+    position: relative;
     margin-bottom: -10px;
+    text-align: center;
+    
+    .hero-img
+    {
+        filter: brightness(50%);
+    }
+    
+    .hero-text
+    {
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        z-index: 1;
+        color: $color-white;
+        font-size: 6vw;
+        //@include fontSize(80px);
+    }
 }
