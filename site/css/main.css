@@ -7381,9 +7381,6 @@ nav {
   position: relative;
   margin-bottom: -10px;
   text-align: center; }
-  .hero-container .hero-img {
-    -webkit-filter: brightness(50%);
-    filter: brightness(50%); }
   .hero-container .hero-text {
     position: absolute;
     top: 35%;
