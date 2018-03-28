@@ -14,8 +14,26 @@ h2
     @include fontSize(50px);
 }
 
+h3
+{
+    text-align: left;
+    @include fontSize(40px);
+}
+
 p
 {
     font-family: $font-body;
     text-align: justify;
+}
+
+a
+{
+    text-decoration: none;
+    color: $color-red;
+    cursor: pointer;
+    
+    &:hover
+    {
+        color: $color-black;
+    }
 }

@@ -1,0 +1,57 @@
+footer
+{
+    height: 100%;
+    padding-top: 10px;
+    background-color: $color-brown;
+    
+    a
+    {
+        color: $color-grey;
+        
+        &:hover
+        {
+            color: $color-red;
+        }
+    }
+    
+    li
+    {
+        font-family: $font-body;
+        @include fontSize(22px);
+    }
+    
+    .times
+    {
+        margin-right: 50px;
+        
+        li
+        {
+            line-height: 40px;
+        }
+    }
+    
+    .address
+    {
+        margin-right: 50px;
+        
+        li
+        {
+            line-height: 30px;
+        }
+    }
+    
+    .social
+    {
+       li
+        {
+            display: inline-block;
+            text-align: center;
+
+            img
+            {
+                width: 50px;
+                margin-right: 20px;
+            }
+        }
+    }
+}

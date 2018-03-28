@@ -7298,7 +7298,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 
 @font-face {
   font-family: Quicksand;
-  src: url("../fonts.Quicksand-Regular.ttf");
+  src: url("../fonts/Quicksand-Regular.ttf");
   font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -7313,9 +7313,48 @@ h2 {
   font-size: 50px;
   font-size: 3.125rem; }
 
+h3 {
+  text-align: left;
+  font-size: 40px;
+  font-size: 2.5rem; }
+
 p {
   font-family: "Quicksand", sans-serif;
   text-align: justify; }
+
+a {
+  text-decoration: none;
+  color: #B71C1C;
+  cursor: pointer; }
+  a:hover {
+    color: #000000; }
+
+footer {
+  height: 100%;
+  padding-top: 10px;
+  background-color: #B4804B; }
+  footer a {
+    color: #D8D8D8; }
+    footer a:hover {
+      color: #B71C1C; }
+  footer li {
+    font-family: "Quicksand", sans-serif;
+    font-size: 22px;
+    font-size: 1.375rem; }
+  footer .times {
+    margin-right: 50px; }
+    footer .times li {
+      line-height: 40px; }
+  footer .address {
+    margin-right: 50px; }
+    footer .address li {
+      line-height: 30px; }
+  footer .social li {
+    display: inline-block;
+    text-align: center; }
+    footer .social li img {
+      width: 50px;
+      margin-right: 20px; }
 
 nav {
   height: 100px;
@@ -7352,3 +7391,10 @@ nav {
     z-index: 1;
     color: #FFFFFF;
     font-size: 6vw; }
+
+.view-events {
+  font-family: "AveriaSerifRegular", serif;
+  font-size: 30px;
+  font-size: 1.875rem;
+  text-align: center;
+  margin-bottom: 0px; }
