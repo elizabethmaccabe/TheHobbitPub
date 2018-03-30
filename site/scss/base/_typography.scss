@@ -20,6 +20,12 @@ h3
     @include fontSize(40px);
 }
 
+h4
+{
+    text-align: left;
+    @include fontSize(30px);
+}
+
 p
 {
     font-family: $font-body-regular;

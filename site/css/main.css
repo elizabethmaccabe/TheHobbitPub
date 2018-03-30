@@ -7323,6 +7323,11 @@ h3 {
   font-size: 40px;
   font-size: 2.5rem; }
 
+h4 {
+  text-align: left;
+  font-size: 30px;
+  font-size: 1.875rem; }
+
 p {
   font-family: "QuicksandRegular", sans-serif;
   text-align: justify; }
@@ -7344,8 +7349,8 @@ footer {
       color: #B71C1C; }
   footer li {
     font-family: "QuicksandRegular", sans-serif;
-    font-size: 22px;
-    font-size: 1.375rem;
+    font-size: 20px;
+    font-size: 1.25rem;
     color: #FFFFFF; }
   footer .times {
     margin-right: 50px; }
