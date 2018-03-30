@@ -3,13 +3,13 @@ nav
     height: 100px;
     line-height: 100px;
     margin-bottom: -20px;
-    font-family: $font-nav;
     color: $color-white;
     
     li
     {
         a
         {
+            font-family: $font-nav;
             @include fontSize(25px);
         }
         

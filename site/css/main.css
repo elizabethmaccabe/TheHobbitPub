@@ -7297,8 +7297,13 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   font-weight: 300; }
 
 @font-face {
-  font-family: Quicksand;
+  font-family: QuicksandRegular;
   src: url("../fonts/Quicksand-Regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: QuicksandMedium;
+  src: url("../fonts/Quicksand-Medium.ttf");
   font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -7319,7 +7324,7 @@ h3 {
   font-size: 2.5rem; }
 
 p {
-  font-family: "Quicksand", sans-serif;
+  font-family: "QuicksandRegular", sans-serif;
   text-align: justify; }
 
 a {
@@ -7338,7 +7343,7 @@ footer {
     footer a:hover {
       color: #B71C1C; }
   footer li {
-    font-family: "Quicksand", sans-serif;
+    font-family: "QuicksandRegular", sans-serif;
     font-size: 22px;
     font-size: 1.375rem; }
   footer .times {
@@ -7360,9 +7365,9 @@ nav {
   height: 100px;
   line-height: 100px;
   margin-bottom: -20px;
-  font-family: "AveriaSerifLight", serif;
   color: #FFFFFF; }
   nav li a {
+    font-family: "AveriaSerifLight", serif;
     font-size: 25px;
     font-size: 1.5625rem; }
   nav li:hover a {
@@ -7395,3 +7400,32 @@ nav {
   font-size: 1.875rem;
   text-align: center;
   margin-bottom: 0px; }
+
+.events-list p {
+  text-align: center; }
+
+.card {
+  font-family: "QuicksandRegular", sans-serif; }
+  .card span {
+    font-family: "AveriaSerifRegular", serif; }
+  .card .card-content p {
+    font-size: 17px;
+    font-size: 1.0625rem; }
+  .card .card-reveal p {
+    font-size: 18px;
+    font-size: 1.125rem; }
+  .card .card-reveal .details {
+    font-family: "QuicksandMedium", sans-serif;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 20px; }
+  .card .card-reveal .event-details li {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 30px; }
+  .card .card-reveal .event-details .terms {
+    font-family: "QuicksandMedium", sans-serif;
+    color: #B71C1C; }
+  .card .card-reveal .event-details .entry {
+    font-family: "QuicksandMedium", sans-serif;
+    color: #B4804B; }

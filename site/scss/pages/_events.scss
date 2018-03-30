@@ -1,0 +1,61 @@
+.events-list
+{
+    p
+    {
+        text-align: center;
+    }
+}
+
+.card
+{
+    font-family: $font-body-regular;
+    
+    span
+    {
+        font-family: $font-header;
+    }
+    
+    .card-content
+    {
+        p
+        {
+            @include fontSize(17px);
+        }
+    }
+    
+    .card-reveal
+    {
+        p
+        {
+            @include fontSize(18px);
+        }
+        
+        .details
+        {
+            font-family: $font-body-medium;
+            @include fontSize(20px);
+            line-height: 20px;
+        }
+        
+        .event-details
+        {
+            li
+            {
+                @include fontSize(18px);
+                line-height: 30px;
+            }
+            
+            .terms
+            {
+                font-family: $font-body-medium;
+                color: $color-red;
+            }
+            
+            .entry
+            {
+                font-family: $font-body-medium;
+                color: $color-brown;
+            }
+        }
+    }
+}
