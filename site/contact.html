@@ -46,33 +46,33 @@
                     <h2>SEND US A MESSAGE</h2>
                 </div>
                 <div class="row container">
-                    <form class="col s12">
+                    <form class="col s12" accept-charset="UTF-8" action="https://usebasin.com/f/a07b48d7208c" method="POST">
                         <div class="row">
                             <div class="input-field col s12">
-                                <input type="text" id="first_name" class="validate">
+                                <input type="text" id="first_name" name="first_name" class="validate" required>
                                 <label for="first_name">First Name</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input type="text" id="last_name" class="validate">
+                                <input type="text" id="last_name" name="last_name" class="validate" required>
                                 <label for="last_name">Last Name</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input type="email" id="email" class="validate">
+                                <input type="email" id="email" name="email" class="validate" required>
                                 <label for="email">Email</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <textarea id="message" class="materialize-textarea"></textarea>
+                                <textarea id="message" name="message" class="materialize-textarea validate" required></textarea>
                                 <label for="message">Message</label>
                             </div>
                         </div>
                         <div class="row">
-                            <button type="submit" class="btn waves-effect waves-light" name="action">Send
+                            <button type="submit" class="btn waves-effect waves-light" name="action">Send Message
                                 <i class="material-icons right">navigate_next</i>
                             </button>
                         </div>
