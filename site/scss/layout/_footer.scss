@@ -18,6 +18,7 @@ footer
     {
         font-family: $font-body-regular;
         @include fontSize(22px);
+        color: $color-white;
     }
     
     .times

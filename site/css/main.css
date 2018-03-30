@@ -7345,7 +7345,8 @@ footer {
   footer li {
     font-family: "QuicksandRegular", sans-serif;
     font-size: 22px;
-    font-size: 1.375rem; }
+    font-size: 1.375rem;
+    color: #FFFFFF; }
   footer .times {
     margin-right: 50px; }
     footer .times li {
