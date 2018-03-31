@@ -7410,6 +7410,30 @@ form .btn, form .btn-large, form .btn-small {
   form .btn:hover, form .btn-large:hover, form .btn-small:hover {
     background-color: #B4804B; }
 
+.view-offers {
+  font-family: "QuicksandMedium", sans-serif;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  text-align: center; }
+
+.drinks-container h4 {
+  margin-left: 10px; }
+
+.drinks-container .cocktail {
+  width: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.drinks-container .shooter {
+  width: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.drinks-container .bomb {
+  width: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
 .events-list p {
   text-align: center; }
 

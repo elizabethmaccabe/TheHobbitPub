@@ -1,0 +1,35 @@
+.view-offers
+{
+    font-family: $font-body-medium;
+    @include fontSize(25px);
+    text-align: center;
+}
+
+.drinks-container
+{
+    h4
+    {
+        margin-left: 10px;
+    }
+    
+    .cocktail
+    {
+        width: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .shooter
+    {
+        width: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .bomb
+    {
+        width: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
