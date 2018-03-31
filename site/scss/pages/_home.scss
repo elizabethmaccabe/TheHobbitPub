@@ -1,7 +1,7 @@
 .view-events
 {
-    font-family: $font-header;
-    @include fontSize(30px);
+    font-family: $font-body-medium;
+    @include fontSize(25px);
     text-align: center;
     margin-bottom: 0px;
 }

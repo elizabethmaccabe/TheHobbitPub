@@ -7464,8 +7464,8 @@ form .btn, form .btn-large, form .btn-small {
     color: #B4804B; }
 
 .view-events {
-  font-family: "AveriaSerifRegular", serif;
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-family: "QuicksandMedium", sans-serif;
+  font-size: 25px;
+  font-size: 1.5625rem;
   text-align: center;
   margin-bottom: 0px; }
