@@ -7437,29 +7437,29 @@ form .btn, form .btn-large, form .btn-small {
 .events-list p {
   text-align: center; }
 
-.card {
+.events-card {
   font-family: "QuicksandRegular", sans-serif; }
-  .card span {
+  .events-card span {
     font-family: "AveriaSerifRegular", serif; }
-  .card .card-content p {
+  .events-card .card-content p {
     font-size: 17px;
     font-size: 1.0625rem; }
-  .card .card-reveal p {
+  .events-card .card-reveal p {
     font-size: 18px;
     font-size: 1.125rem; }
-  .card .card-reveal .details {
+  .events-card .card-reveal .details {
     font-family: "QuicksandMedium", sans-serif;
     font-size: 20px;
     font-size: 1.25rem;
     line-height: 20px; }
-  .card .card-reveal .event-details li {
+  .events-card .card-reveal .event-details li {
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 30px; }
-  .card .card-reveal .event-details .terms {
+  .events-card .card-reveal .event-details .terms {
     font-family: "QuicksandMedium", sans-serif;
     color: #B71C1C; }
-  .card .card-reveal .event-details .entry {
+  .events-card .card-reveal .event-details .entry {
     font-family: "QuicksandMedium", sans-serif;
     color: #B4804B; }
 
@@ -7469,3 +7469,19 @@ form .btn, form .btn-large, form .btn-small {
   font-size: 1.5625rem;
   text-align: center;
   margin-bottom: 0px; }
+
+.offers-list p {
+  text-align: center; }
+
+.offers-card .card-image {
+  width: 200px; }
+
+.offers-card .card-content .card-title {
+  color: #B71C1C;
+  font-family: "AveriaSerifRegular", serif;
+  font-size: 30px;
+  font-size: 1.875rem; }
+
+.offers-card .card-content p {
+  font-size: 20px;
+  font-size: 1.25rem; }

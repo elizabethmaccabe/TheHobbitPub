@@ -1,0 +1,30 @@
+.offers-list
+{
+    p
+    {
+        text-align: center;
+    }
+}
+
+.offers-card
+{
+    .card-image
+    {
+        width: 200px;
+    }
+    
+    .card-content
+    {
+        .card-title
+        {
+            color: $color-red;
+            font-family: $font-header;
+            @include fontSize(30px);
+        }
+        
+        p
+        {
+            @include fontSize(20px);
+        }
+    }
+}
