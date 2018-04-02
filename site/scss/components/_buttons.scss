@@ -1,0 +1,10 @@
+.btn
+{
+    transition: 0.2s ease-in-out;
+    padding-left: 25px;
+
+    &:hover
+    {
+        background-color: $color-brown;
+    }
+}

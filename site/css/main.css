@@ -7388,27 +7388,20 @@ nav {
       width: 180px;
       padding: 10px; }
 
+.btn, .btn-large, .btn-small {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  padding-left: 25px; }
+  .btn:hover, .btn-large:hover, .btn-small:hover {
+    background-color: #B4804B; }
+
 .hero-container {
   position: relative;
   margin-bottom: -10px;
   text-align: center; }
-  .hero-container .hero-text {
-    position: absolute;
-    top: 35%;
-    left: 35%;
-    z-index: 1;
-    color: #FFFFFF;
-    font-size: 6vw; }
 
 .confirmation h3 {
   text-align: center; }
-
-form .btn, form .btn-large, form .btn-small {
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  padding-left: 25px; }
-  form .btn:hover, form .btn-large:hover, form .btn-small:hover {
-    background-color: #B4804B; }
 
 .view-offers {
   font-family: "QuicksandMedium", sans-serif;
