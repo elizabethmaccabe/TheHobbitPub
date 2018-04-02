@@ -1,0 +1,14 @@
+form
+{
+    label
+    {
+        font-family: $font-body-regular;
+        font-size: 18px !important;
+    }
+    
+    .btn
+    {
+        margin-left: 10px;
+        @include fontSize(18px);
+    }
+}
