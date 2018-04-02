@@ -1,13 +1,28 @@
 @media #{$medium-and-down}
 {
-    h3
+    header
     {
-        text-align: left;
-        font-size: 30px !important;
+        .brand-logo
+        {
+            font-size: 50px !important;
+            width: 100%;
+            text-align: center;
+        }
+        
+        i
+        {
+            margin-top: 18px;
+            font-size: 45px !important;
+        }
     }
     
-    .brand-logo
+    h2
     {
-        font-size: 50px !important;
+        font-size: 40px !important;
+    }
+    
+    .tile
+    {
+        margin-bottom: 25px;
     }
 }

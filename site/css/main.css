@@ -7498,11 +7498,17 @@ form .btn, form .btn-large, form .btn-small {
   font-size: 1.25rem; }
 
 @media only screen and (max-width: 992px) {
-  h3 {
-    text-align: left;
-    font-size: 30px !important; }
-  .brand-logo {
-    font-size: 50px !important; } }
+  header .brand-logo {
+    font-size: 50px !important;
+    width: 100%;
+    text-align: center; }
+  header i {
+    margin-top: 18px;
+    font-size: 45px !important; }
+  h2 {
+    font-size: 40px !important; }
+  .tile {
+    margin-bottom: 25px; } }
 
 @media only screen and (max-width: 600px) {
   header .brand-logo {
