@@ -12,4 +12,9 @@ form
         margin-left: 10px;
         @include fontSize(18px);
     }
+    
+    input, textarea
+    {
+        font-family: $font-body-regular;
+    }
 }

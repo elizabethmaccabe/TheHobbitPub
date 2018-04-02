@@ -7424,6 +7424,9 @@ form .btn, form .btn-large, form .btn-small {
   font-size: 18px;
   font-size: 1.125rem; }
 
+form input, form textarea {
+  font-family: "QuicksandRegular", sans-serif; }
+
 .view-offers {
   font-family: "QuicksandMedium", sans-serif;
   font-size: 25px;
