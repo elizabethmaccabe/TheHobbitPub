@@ -1,0 +1,18 @@
+.sidenav
+{
+    font-family: $font-body-medium;
+    
+    li
+    {
+        a
+        {
+            font-size: 25px !important;
+            margin-top: 20px;
+            
+            &:hover
+            {
+                color: $color-red;
+            }
+        }
+    }
+}

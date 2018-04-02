@@ -1,0 +1,63 @@
+@media #{$small-and-down}
+{
+    header
+    {
+        .brand-logo
+        {
+            font-size: 35px !important;
+            width: 100%;
+            text-align: center;
+        }
+        
+        i
+        {
+            margin-top: 25px;
+            margin-left: -20px;
+            font-size: 38px !important;
+        }
+    }
+    
+    h2
+    {
+        font-size: 35px !important;
+    }
+    
+    .tile
+    {
+        margin-bottom: 15px;
+    }
+    
+    .drinks-container
+    {
+        .cocktail
+        {
+            margin-top: 0px !important;
+            margin-bottom: 30px !important;
+        }
+
+        .shooter
+        {
+            margin-top: 0px !important;
+            margin-bottom: 30px !important;
+        }
+
+        .bomb
+        {
+            margin-top: 0px !important;
+            margin-bottom: 30px !important;
+        }
+    }
+    
+    footer
+    {
+        h4, li, .social
+        {
+            text-align: center;
+        }
+        
+        .follow
+        {
+            margin-top: 40px;
+        }
+    }
+}
