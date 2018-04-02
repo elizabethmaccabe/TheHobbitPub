@@ -17,6 +17,11 @@
         }
     }
     
+    .hero-img
+    {
+        margin-top: 24px !important;
+    }
+    
     h2
     {
         font-size: 35px !important;
@@ -45,6 +50,14 @@
         {
             margin-top: 0px !important;
             margin-bottom: 30px !important;
+        }
+    }
+    
+    form
+    {
+        .submit
+        {
+            text-align: center;
         }
     }
     

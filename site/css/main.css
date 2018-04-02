@@ -7408,6 +7408,8 @@ nav {
   position: relative;
   margin-bottom: -10px;
   text-align: center; }
+  .hero-container .hero-img {
+    margin-top: 10px; }
 
 .confirmation h3 {
   text-align: center; }
@@ -7417,6 +7419,7 @@ form label {
   font-size: 18px !important; }
 
 form .btn, form .btn-large, form .btn-small {
+  margin-top: 20px;
   margin-left: 10px;
   font-size: 18px;
   font-size: 1.125rem; }
@@ -7518,6 +7521,8 @@ form .btn, form .btn-large, form .btn-small {
     margin-top: 25px;
     margin-left: -20px;
     font-size: 38px !important; }
+  .hero-img {
+    margin-top: 24px !important; }
   h2 {
     font-size: 35px !important; }
   .tile {
@@ -7531,6 +7536,8 @@ form .btn, form .btn-large, form .btn-small {
   .drinks-container .bomb {
     margin-top: 0px !important;
     margin-bottom: 30px !important; }
+  form .submit {
+    text-align: center; }
   footer h4, footer li, footer .social {
     text-align: center; }
   footer .follow {
