@@ -7335,7 +7335,10 @@ p {
 a {
   text-decoration: none;
   color: #B71C1C;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: "QuicksandMedium", sans-serif;
+  font-size: 25px;
+  font-size: 1.5625rem; }
   a:hover {
     color: #000000; }
 
@@ -7344,7 +7347,10 @@ footer {
   padding-top: 10px;
   background-color: #B4804B; }
   footer a {
-    color: #D8D8D8; }
+    color: #D8D8D8;
+    font-family: "QuicksandRegular", sans-serif;
+    font-size: 20px;
+    font-size: 1.25rem; }
     footer a:hover {
       color: #B71C1C; }
   footer li {
@@ -7427,32 +7433,22 @@ form .btn, form .btn-large, form .btn-small {
 form input, form textarea {
   font-family: "QuicksandRegular", sans-serif; }
 
-.view-offers {
-  font-family: "QuicksandMedium", sans-serif;
-  font-size: 25px;
-  font-size: 1.5625rem;
-  text-align: center; }
-
-.drinks-container h4 {
-  margin-left: 20px; }
-
-.drinks-container .cocktail {
-  width: 300px;
-  margin-top: 50px;
-  margin-bottom: 50px; }
-
-.drinks-container .shooter {
-  width: 300px;
-  margin-top: 50px;
-  margin-bottom: 50px; }
-
-.drinks-container .bomb {
-  width: 300px;
-  margin-top: 50px;
-  margin-bottom: 50px; }
-
-.events-list p {
-  text-align: center; }
+.drinks-container {
+  margin-top: 20px; }
+  .drinks-container h4 {
+    margin-left: 20px; }
+  .drinks-container .cocktail {
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .drinks-container .shooter {
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .drinks-container .bomb {
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
 
 .events-card {
   font-family: "QuicksandRegular", sans-serif; }
@@ -7484,9 +7480,6 @@ form input, form textarea {
   font-family: "QuicksandMedium", sans-serif;
   font-size: 25px;
   font-size: 1.5625rem;
-  text-align: center; }
-
-.offers-list p {
   text-align: center; }
 
 .offers-card .card-image {

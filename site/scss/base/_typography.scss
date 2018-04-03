@@ -37,6 +37,8 @@ a
     text-decoration: none;
     color: $color-red;
     cursor: pointer;
+    font-family: $font-body-medium;
+    @include fontSize(25px);
     
     &:hover
     {

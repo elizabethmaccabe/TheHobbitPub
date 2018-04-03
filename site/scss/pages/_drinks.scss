@@ -1,12 +1,7 @@
-.view-offers
-{
-    font-family: $font-body-medium;
-    @include fontSize(25px);
-    text-align: center;
-}
-
 .drinks-container
-{    
+{   
+    margin-top: 20px;
+    
     h4
     {
         margin-left: 20px;
