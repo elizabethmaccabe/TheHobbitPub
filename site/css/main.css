@@ -7434,9 +7434,12 @@ form input, form textarea {
   font-family: "QuicksandRegular", sans-serif; }
 
 .drinks-container {
-  margin-top: 20px; }
+  margin-top: 20px;
+  text-align: left; }
   .drinks-container h4 {
     margin-left: 20px; }
+  .drinks-container .collapsible-header {
+    outline: none; }
   .drinks-container .cocktail {
     width: 300px;
     margin-top: 50px;
