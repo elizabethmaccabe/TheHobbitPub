@@ -7440,15 +7440,7 @@ form input, form textarea {
     margin-left: 20px; }
   .drinks-container .collapsible-header {
     outline: none; }
-  .drinks-container .cocktail {
-    width: 300px;
-    margin-top: 50px;
-    margin-bottom: 50px; }
-  .drinks-container .shooter {
-    width: 300px;
-    margin-top: 50px;
-    margin-bottom: 50px; }
-  .drinks-container .bomb {
+  .drinks-container .cocktail, .drinks-container .shooter, .drinks-container .bomb {
     width: 300px;
     margin-top: 50px;
     margin-bottom: 50px; }
@@ -7509,32 +7501,33 @@ form input, form textarea {
   h2 {
     font-size: 40px !important; }
   .tile {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+  .cocktail, .shooter, .bomb {
+    width: 280px !important; } }
 
 @media only screen and (max-width: 600px) {
   header .brand-logo {
-    font-size: 35px !important;
+    font-size: 30px !important;
     width: 100%;
     text-align: center; }
   header i {
     margin-top: 25px;
     margin-left: -20px;
-    font-size: 38px !important; }
+    font-size: 32px !important; }
+  .sidenav li a {
+    font-size: 20px !important; }
   .hero-img {
     margin-top: 24px !important; }
   h2 {
-    font-size: 35px !important; }
+    font-size: 30px !important; }
   .tile {
     margin-bottom: 15px; }
-  .drinks-container .cocktail {
-    margin-top: 0px !important;
-    margin-bottom: 30px !important; }
-  .drinks-container .shooter {
-    margin-top: 0px !important;
-    margin-bottom: 30px !important; }
-  .drinks-container .bomb {
-    margin-top: 0px !important;
-    margin-bottom: 30px !important; }
+  .drinks-container {
+    text-align: center; }
+    .drinks-container .cocktail, .drinks-container .shooter, .drinks-container .bomb {
+      width: 230px !important;
+      margin-top: 0px !important;
+      margin-bottom: 30px !important; }
   form .submit {
     text-align: center; }
   footer h4, footer li, footer .social {

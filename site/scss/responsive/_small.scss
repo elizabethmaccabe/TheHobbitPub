@@ -4,7 +4,7 @@
     {
         .brand-logo
         {
-            font-size: 35px !important;
+            font-size: 30px !important;
             width: 100%;
             text-align: center;
         }
@@ -13,7 +13,18 @@
         {
             margin-top: 25px;
             margin-left: -20px;
-            font-size: 38px !important;
+            font-size: 32px !important;
+        }
+    }
+    
+    .sidenav
+    {
+        li
+        {
+            a
+            {
+                font-size: 20px !important;    
+            }
         }
     }
     
@@ -24,7 +35,7 @@
     
     h2
     {
-        font-size: 35px !important;
+        font-size: 30px !important;
     }
     
     .tile
@@ -34,20 +45,11 @@
     
     .drinks-container
     {
-        .cocktail
+        text-align: center;
+        
+        .cocktail, .shooter, .bomb
         {
-            margin-top: 0px !important;
-            margin-bottom: 30px !important;
-        }
-
-        .shooter
-        {
-            margin-top: 0px !important;
-            margin-bottom: 30px !important;
-        }
-
-        .bomb
-        {
+            width: 230px !important;
             margin-top: 0px !important;
             margin-bottom: 30px !important;
         }
