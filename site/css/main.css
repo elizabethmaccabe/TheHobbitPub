@@ -7442,8 +7442,8 @@ form input, form textarea {
     outline: none; }
   .drinks-container .cocktail, .drinks-container .shooter, .drinks-container .bomb {
     width: 300px;
-    margin-top: 50px;
-    margin-bottom: 50px; }
+    margin-top: 30px;
+    margin-bottom: 30px; }
 
 .events-card {
   font-family: "QuicksandRegular", sans-serif; }
