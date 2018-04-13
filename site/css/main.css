@@ -7448,10 +7448,16 @@ form input, form textarea {
 .events-card {
   font-family: "QuicksandRegular", sans-serif; }
   .events-card span {
-    font-family: "AveriaSerifRegular", serif; }
+    font-family: "AveriaSerifRegular", serif;
+    color: #B71C1C; }
+    .events-card span i {
+      color: #000000; }
   .events-card .card-content p {
     font-size: 17px;
     font-size: 1.0625rem; }
+  .events-card .card-content .event-date {
+    font-family: "QuicksandMedium", sans-serif;
+    color: #B4804B; }
   .events-card .card-reveal p {
     font-size: 18px;
     font-size: 1.125rem; }

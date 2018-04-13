@@ -5,6 +5,12 @@
     span
     {
         font-family: $font-header;
+        color: $color-red;
+        
+        i
+        {
+            color: $color-black;
+        }
     }
     
     .card-content
@@ -12,6 +18,12 @@
         p
         {
             @include fontSize(17px);
+        }
+        
+        .event-date
+        {
+            font-family: $font-body-medium;
+            color: $color-brown;
         }
     }
     
