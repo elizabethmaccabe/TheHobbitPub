@@ -7438,8 +7438,12 @@ form input, form textarea {
   height: 400px;
   margin: 40px 0px; }
 
+.happy-hour {
+  margin-top: 40px; }
+  .happy-hour .card {
+    background-color: #B4804B; }
+
 .drinks-container, .quests-container {
-  margin-top: 20px;
   text-align: left; }
   .drinks-container .collapsible h4, .quests-container .collapsible h4 {
     margin-left: 20px; }
@@ -7497,6 +7501,11 @@ form input, form textarea {
   font-size: 25px;
   font-size: 1.5625rem;
   text-align: center; }
+
+.happy-hour {
+  margin-top: 40px; }
+  .happy-hour .card {
+    background-color: #B4804B; }
 
 .offers-card .card-image {
   width: 200px; }
