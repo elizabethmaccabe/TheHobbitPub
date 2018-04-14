@@ -7438,17 +7438,27 @@ form input, form textarea {
   height: 400px;
   margin: 40px 0px; }
 
-.drinks-container {
+.drinks-container, .quests-container {
   margin-top: 20px;
   text-align: left; }
-  .drinks-container h4 {
+  .drinks-container .collapsible h4, .quests-container .collapsible h4 {
     margin-left: 20px; }
-  .drinks-container .collapsible-header {
+  .drinks-container .collapsible h3, .quests-container .collapsible h3 {
+    color: #B71C1C;
+    margin: 30px 0 30px 0; }
+  .drinks-container .collapsible .collapsible-header, .quests-container .collapsible .collapsible-header {
     outline: none; }
-  .drinks-container .cocktail, .drinks-container .shooter, .drinks-container .bomb {
-    width: 300px;
-    margin-top: 30px;
-    margin-bottom: 30px; }
+  .drinks-container .collapsible .collapsible-body .cocktail, .drinks-container .collapsible .collapsible-body .shooter, .drinks-container .collapsible .collapsible-body .bomb, .quests-container .collapsible .collapsible-body .cocktail, .quests-container .collapsible .collapsible-body .shooter, .quests-container .collapsible .collapsible-body .bomb {
+    width: 280px;
+    margin: 30px 0 30px 25px; }
+  .drinks-container .collapsible .collapsible-body .fellowship, .drinks-container .collapsible .collapsible-body .nine, .quests-container .collapsible .collapsible-body .fellowship, .quests-container .collapsible .collapsible-body .nine {
+    width: 180px;
+    margin-left: 90px; }
+  .drinks-container .collapsible .collapsible-body .quest-descrip, .quests-container .collapsible .collapsible-body .quest-descrip {
+    font-size: 20px;
+    font-size: 1.25rem;
+    width: 85%;
+    margin: 0 auto; }
 
 .events-card {
   font-family: "QuicksandRegular", sans-serif; }
