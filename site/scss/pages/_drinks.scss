@@ -37,6 +37,15 @@
                 width: 280px;
                 margin: 30px 0 30px 25px;
             }
+            
+            .info
+            {
+                font-family: $font-body-medium;
+                width: 94%;
+                margin: 0 auto;
+                @include fontSize(20px);
+                color: $color-red;
+            }
 
             .fellowship, .nine
             {
