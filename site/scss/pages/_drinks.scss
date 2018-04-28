@@ -32,6 +32,8 @@
     
         .collapsible-body
         {
+            text-align: center;
+            
             .cocktail, .shooter, .bomb
             {
                 width: 280px;
@@ -49,14 +51,14 @@
 
             .fellowship, .nine
             {
-                width: 180px;
-                margin-left: 90px;
+                width: 280px;
+                margin-left: -20px;
             }
             
             .quest-descrip
             {
                 @include fontSize(20px);
-                width: 85%;
+                width: 90%;
                 margin: 0 auto;
             }
         }

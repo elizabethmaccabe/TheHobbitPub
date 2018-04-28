@@ -7452,24 +7452,26 @@ form input, form textarea {
     margin: 30px 0 30px 0; }
   .drinks-container .collapsible .collapsible-header, .quests-container .collapsible .collapsible-header {
     outline: none; }
-  .drinks-container .collapsible .collapsible-body .cocktail, .drinks-container .collapsible .collapsible-body .shooter, .drinks-container .collapsible .collapsible-body .bomb, .quests-container .collapsible .collapsible-body .cocktail, .quests-container .collapsible .collapsible-body .shooter, .quests-container .collapsible .collapsible-body .bomb {
-    width: 280px;
-    margin: 30px 0 30px 25px; }
-  .drinks-container .collapsible .collapsible-body .info, .quests-container .collapsible .collapsible-body .info {
-    font-family: "QuicksandMedium", sans-serif;
-    width: 94%;
-    margin: 0 auto;
-    font-size: 20px;
-    font-size: 1.25rem;
-    color: #B71C1C; }
-  .drinks-container .collapsible .collapsible-body .fellowship, .drinks-container .collapsible .collapsible-body .nine, .quests-container .collapsible .collapsible-body .fellowship, .quests-container .collapsible .collapsible-body .nine {
-    width: 180px;
-    margin-left: 90px; }
-  .drinks-container .collapsible .collapsible-body .quest-descrip, .quests-container .collapsible .collapsible-body .quest-descrip {
-    font-size: 20px;
-    font-size: 1.25rem;
-    width: 85%;
-    margin: 0 auto; }
+  .drinks-container .collapsible .collapsible-body, .quests-container .collapsible .collapsible-body {
+    text-align: center; }
+    .drinks-container .collapsible .collapsible-body .cocktail, .drinks-container .collapsible .collapsible-body .shooter, .drinks-container .collapsible .collapsible-body .bomb, .quests-container .collapsible .collapsible-body .cocktail, .quests-container .collapsible .collapsible-body .shooter, .quests-container .collapsible .collapsible-body .bomb {
+      width: 280px;
+      margin: 30px 0 30px 25px; }
+    .drinks-container .collapsible .collapsible-body .info, .quests-container .collapsible .collapsible-body .info {
+      font-family: "QuicksandMedium", sans-serif;
+      width: 94%;
+      margin: 0 auto;
+      font-size: 20px;
+      font-size: 1.25rem;
+      color: #B71C1C; }
+    .drinks-container .collapsible .collapsible-body .fellowship, .drinks-container .collapsible .collapsible-body .nine, .quests-container .collapsible .collapsible-body .fellowship, .quests-container .collapsible .collapsible-body .nine {
+      width: 280px;
+      margin-left: -20px; }
+    .drinks-container .collapsible .collapsible-body .quest-descrip, .quests-container .collapsible .collapsible-body .quest-descrip {
+      font-size: 20px;
+      font-size: 1.25rem;
+      width: 90%;
+      margin: 0 auto; }
 
 .events-card {
   font-family: "QuicksandRegular", sans-serif; }
