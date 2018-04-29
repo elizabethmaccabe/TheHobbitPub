@@ -15,7 +15,7 @@ var runSequence = require('run-sequence');
 //Task to compile SCSS to CSS
 gulp.task('sass', function()
 {
-    return gulp.src('site/scss/**/*.scss')
+    return gulp.src('docs/scss/**/*.scss')
     .pipe(sass(
     {
         includePaths: require('node-normalize-scss').includePaths
@@ -25,7 +25,7 @@ gulp.task('sass', function()
         browsers: ['last 2 versions'],
         cascade: false
     }))
-    .pipe(gulp.dest('site/css'))
+    .pipe(gulp.dest('docs/css'))
     .pipe(browserSync.reload(
     {
         stream: true
@@ -37,7 +37,7 @@ gulp.task('browserSync', function()
 {
     browserSync.init({
         server: {
-            baseDir: 'site'
+            baseDir: 'docs'
         },
     })
 });
@@ -45,9 +45,9 @@ gulp.task('browserSync', function()
 //Task to watch scss, html and js files
 gulp.task('watch', ['browserSync', 'sass'], function()
 {
-    gulp.watch('site/scss/**/*.scss', ['sass']);
-    gulp.watch('site/*.html', browserSync.reload);
-    gulp.watch('site/**/*.js', browserSync.reload);
+    gulp.watch('docs/scss/**/*.scss', ['sass']);
+    gulp.watch('docs/*.html', browserSync.reload);
+    gulp.watch('docs/**/*.js', browserSync.reload);
 });
 
 gulp.task('default', function(callback)
@@ -61,7 +61,7 @@ gulp.task('default', function(callback)
 //Task to concatenate all js files into 'main.min.js'
 gulp.task('useref', function()
 {
-    return gulp.src('site/*.html')
+    return gulp.src('docs/*.html')
     .pipe(useref())
     //Minifies only if it's a JS file
     .pipe(gulpIf('*.js', uglify()))
@@ -71,7 +71,7 @@ gulp.task('useref', function()
 //Task to minify images
 gulp.task('images', function()
 {
-    return gulp.src('site/**/*.+(png|jpg|gif|svg)')
+    return gulp.src('docs/**/*.+(png|jpg|gif|svg)')
     //Cache images that ran through imagemin
     .pipe(cache(imagemin(
     {
@@ -89,7 +89,7 @@ gulp.task('cache:clear', function(callback)
 //Task to copy fonts to 'dist' folder
 gulp.task('fonts', function()
 {
-    return gulp.src('site/fonts/**/*')
+    return gulp.src('docs/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'))
 })
 
