@@ -7567,6 +7567,8 @@ form input, form textarea {
       width: 230px !important;
       margin-top: 0px !important;
       margin-bottom: 30px !important; }
+  .collapsible-body .flow-text {
+    text-align: left; }
   form .submit {
     text-align: center; }
   footer h4, footer li, footer .social {
